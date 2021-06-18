@@ -155,17 +155,18 @@
 
 							<p>If you think we could work well together then please send me your name, email, and a short message. I look forward to working with you!</p>
 
-							<form method="post" action="#">
+							<form id="my-form" method="post" action="https://formspree.io/f/xjvjrjwa">
 								<div class="row">
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" /></div>
 									<div class="col-12">
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
+									<div class="col-12">				
+										<input id="my-form-button" type="submit" onclick="sendEmail()" value="Send Message" />
 									</div>
 								</div>
+								<p id="my-form-status"></p>
 							</form>
 
 						</div>
@@ -191,6 +192,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/sendMessage.js"></script>
+			
 
 	</body>
 </html>
